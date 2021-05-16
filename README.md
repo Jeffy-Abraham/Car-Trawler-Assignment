@@ -1,21 +1,15 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
+# Car trawler assignment
 
 ### `npm install`
 
  do an npm install to install all the dependencies
 
-### `cypress --save-dev`
+### `npm install cypress --save-dev`
 
 to install cypress as a dev dependency
 
 ### `npm run start`
-it will start the localserver and the application will be serverd via localhost:3000
-
-
+it will start the localserver and the application will be served via localhost:3000
 
 ### `npm run cypress:open`
 
@@ -27,24 +21,24 @@ This will run all the unit test
 
 ### Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Implemented all the functionalities mentioned 
+* Implemented additional functionalities like multi-filter
+* Used redux for state management
+* Performed unit testing on selected components
+* Performed end-to-end testing with 100% code coverage using cypress
+* Designed component logic with focus given to the aspect of reusability
+* Implemented custom dropdown
+* Followed advanced react-design patterns
+* deployed the application via AWS amplify
 
-### Analyzing the Bundle Size
+### end to end testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![alt text](https://raw.githubusercontent.com/Jeffy-Abraham/Car-Trawler-Assignment/master/endtoend.PNG)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
