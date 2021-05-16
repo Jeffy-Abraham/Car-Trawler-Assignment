@@ -30,6 +30,7 @@ export const setLocation = function (vehRental, data) {
   }
 };
 export const getRentalLocation = function (data) {
+  console.log(data)
   var Pickup = data["VehRentalCore"]["PickUpLocation"]["@Name"];
   var Drop = data["VehRentalCore"]["ReturnLocation"]["@Name"];
   var rentals = {

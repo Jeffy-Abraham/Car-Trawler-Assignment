@@ -26,11 +26,10 @@ function SupplyFilterContainer({ setSupplyFilter, applyMultiFilter }) {
     <div>
       <Toggle title="Suppliers">
         {CheckBoxSuppliers.map((checkbox) => {
-          console.log(typeof active);
-          console.log(checkbox.id);
+       
           if (active === checkbox.id) {
             return (
-              <CustomChecKBox
+              <CustomChecKBox key={checkbox.id}
                 active="true"
                 handleChange={handleChange}
                 {...checkbox}
@@ -38,7 +37,7 @@ function SupplyFilterContainer({ setSupplyFilter, applyMultiFilter }) {
             );
           } else {
             return (
-              <CustomChecKBox
+              <CustomChecKBox key={checkbox.id}
                 active="false"
                 handleChange={handleChange}
                 {...checkbox}

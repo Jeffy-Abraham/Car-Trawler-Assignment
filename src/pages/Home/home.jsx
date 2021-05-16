@@ -2,14 +2,13 @@ import CarList from "../../containers/car-container-list/car-container-list";
 import { useEffect } from "react";
 import { apiReq } from "../../redux/car-reducer/car-action";
 import { connect } from "react-redux";
-import WithSpinner from "../../hoc/with-spinner/with-spinner";
 import AutoComplete from "../../components/google-autocomplete/autocomplete.component";
 import "./home.css";
 import PriceFilterContainer from "../../containers/filter-container/price-filter-container/price-filter-container";
 import SupplyFilterContainer from "../../containers/filter-container/supply-filter-container/supply-filter-container";
 import PropTypes from "prop-types";
-function Home({ apiReq, filteredVersionCarDetails, isFetching, vehRental }) {
-  console.log(filteredVersionCarDetails);
+export function Home({ apiReq, filteredVersionCarDetails, isFetching, vehRental }) {
+
   useEffect(() => {
     apiReq();
   }, []);
@@ -18,11 +17,11 @@ function Home({ apiReq, filteredVersionCarDetails, isFetching, vehRental }) {
     <div className="container">
       <div>
         <AutoComplete title="Pick up location" label="Pickup" />
-        <div>{vehRental.Pickup}</div>
+        <div id='show-location'>{vehRental.Pickup}</div>
       </div>
       <div>
         <AutoComplete title="Drop Location" label="Drop" />
-        <div>{vehRental.Drop}</div>
+        <div id='show-location'>{vehRental.Drop}</div>
       </div>
       <div className="location-container"></div>
       <div className="flex-gallery">

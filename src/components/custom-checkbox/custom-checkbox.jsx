@@ -2,6 +2,7 @@
 //component is resuabele
 //based on the value of active we toggle class
 import "./custom-checkbox.css";
+
 export default function CustomChecKBox({
   label,
   name,
@@ -18,6 +19,7 @@ export default function CustomChecKBox({
           id={id}
           name={name}
           onClick={(e) => {
+            //write integration test to cover that
             handleChange(e);
           }}
           className="checkmark"

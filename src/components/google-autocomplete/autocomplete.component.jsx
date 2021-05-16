@@ -15,6 +15,7 @@ function LocationForm({ label, getLocation, title }) {
         }}
         apiKey="AIzaSyA5PhlSej1NIDdnHTJ2I_JGRJmzFU-FwrQ"
         onPlaceSelected={(place) =>
+        
           getLocation({ data: place.formatted_address, label: label })
         }
       />

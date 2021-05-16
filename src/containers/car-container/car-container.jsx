@@ -12,6 +12,7 @@ export default function CarContainer({ ...otherProps }) {
   const { Vehicle, TotalCharge, _id, Name } = otherProps;
   const { VehMakeModel } = Vehicle;
   let history = useHistory();
+  //use integration test
   const handleClick = function handleClick(id) {
     history.push(`/cars/${_id}`);
   };
